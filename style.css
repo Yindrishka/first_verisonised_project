@@ -1,0 +1,93 @@
+/* Universal Selector */
+* {
+    margin: 0; /* resetting outter spacing */
+    padding: 0; /* resetting inner spacing */
+}
+
+.body {
+    background: #ffffff;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.navbar {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+    background-color: blanchedalmond;
+}
+
+.footer {
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 1;
+    background-color: blanchedalmond;
+}   
+
+.leftSideBar {
+    background-color: blanchedalmond;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 10;
+}
+
+.rightSideBar {
+    background-color: blanchedalmond;
+    grid-column: 12 / span 1;
+    grid-row: 2 / span 10;
+}
+
+.content {
+    background-color: #edacfa;
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 10;
+}
+
+/* ***** ***** ***** **** */
+/* ****** Styling the NavBar ****** */
+/* ***** ***** ***** **** */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #edacfa;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* ***** ***** ***** **** */
+/* ****** Styling the Footer ****** */
+/* ***** ***** ***** **** */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #000000;
+    font-size: 14px;
+}
+
+/* ***** ***** ***** **** */
+/* ****** Styling the Content ****** */
+/* ***** ***** ***** **** */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.profile {
+    max-width: 600px;
+}
+
+.developer-photo {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
